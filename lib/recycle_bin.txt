@@ -1,0 +1,104 @@
+child: Row(
+                        children: List.generate(
+                          streamSnapshot.data!.docs.length,
+                          (index) => GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                category ==
+                                    streamSnapshot.data!.docs[index]["name"];
+                              });
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(25),
+                                color:
+                                    category ==
+                                            streamSnapshot
+                                                .data!
+                                                .docs[index]["name"]
+                                        ? kprimaryColor
+                                        : Colors.white,
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 20,
+                                vertical: 10,
+                              ),
+                              margin: EdgeInsets.only(right: 20),
+                              child: Text(
+                                streamSnapshot.data!.docs[index]["name"],
+                                style: TextStyle(
+                                  color:
+                                      category ==
+                                              streamSnapshot
+                                                  .data!
+                                                  .docs[index]["name"]
+                                          ? Colors.white
+                                          : Colors.grey.shade600,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: List.generate(
+                        streamSnapshot.data!.docs.length,
+                        (index) => GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              category =
+                                  streamSnapshot.data!.docs[index]["name"];
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color:
+                                  category ==
+                                          streamSnapshot
+                                              .data!
+                                              .docs[index]["name"]
+                                      ? kprimaryColor
+                                      : Colors.white,
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 20,
+                              vertical: 10,
+                            ),
+                            margin: EdgeInsets.only(right: 20),
+                            child: Text(
+                              streamSnapshot.data!.docs[index]["name"],
+                              style: TextStyle(
+                                color:
+                                    category ==
+                                            streamSnapshot
+                                                .data!
+                                                .docs[index]["name"]
+                                        ? Colors.white
+                                        : Colors.grey.shade600,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )

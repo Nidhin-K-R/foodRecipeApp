@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"recipeapptrail","appId":"1:337008323501:android:1480ec10c0be24b09c0f24","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"recipeapptrail","configurations":{"android":"1:337008323501:android:1480ec10c0be24b09c0f24","ios":"1:337008323501:ios:efe7d732506a4c2b9c0f24"}}}}}}

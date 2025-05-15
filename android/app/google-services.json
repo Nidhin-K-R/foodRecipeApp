@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "337008323501",
+    "project_id": "recipeapptrail",
+    "storage_bucket": "recipeapptrail.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337008323501:android:1480ec10c0be24b09c0f24",
+        "android_client_info": {
+          "package_name": "com.example.recipe_app_trail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ZlRw7KoVqXuUUs5bx8BThAO0YMreMzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
