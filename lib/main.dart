@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:recipe_app_trail/provider/favourite_provider.dart';
+import 'package:recipe_app_trail/provider/quantity_provider.dart';
 import 'package:recipe_app_trail/views/app_main_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -20,8 +21,11 @@ class MyApp extends StatelessWidget {
       providers: [
         //for favorite providers
         ChangeNotifierProvider(create: (_) => FavouriteProvider()),
+        // for quantity provider
+        ChangeNotifierProvider(create: (_) => QuantityProvider()),
       ],
       child: MaterialApp(
+        // theme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
         home: AppMainScreen(),
       ),
